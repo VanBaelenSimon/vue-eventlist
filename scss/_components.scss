@@ -1,0 +1,66 @@
+@use 'base' as *;
+
+@mixin button-base {
+  display: inline-block;
+  text-decoration: none;
+  color: $primary-color;
+  padding: 1rem;
+  background-color: $secondary-color;
+  border-radius: 0.25rem;
+  font-weight: bold;
+
+  &:hover {
+    background-color: $tertiary-color;
+  }
+}
+
+.navigation {
+  background-color: $primary-color;
+  padding: 0.5rem;
+  font-family: $title-font;
+
+  &__container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  &__link {
+    @include button-base;
+    margin: 0.5rem 1rem;
+  }
+}
+
+.button {
+  @include button-base;
+}
+
+.event {
+  &__container {
+    cursor: pointer;
+    border: 1px solid $secondary-color;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  &__date {
+    font-style: italic;
+    font-weight: bold;
+    padding: 1rem;
+    color: $accent-color;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    &-title {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

@@ -111,7 +111,7 @@
 - Gebruik de html-selector voor 1.5rem padding toe te voegen aan het main-element
 
 ## Home
-- Maak een HomeView component aan met de volgende indhoud:
+- Maak een HomeView component aan met de volgende inhoud:
 
         <template>
             <div class="home">

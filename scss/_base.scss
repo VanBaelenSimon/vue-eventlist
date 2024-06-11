@@ -1,0 +1,21 @@
+$primary-color: #D0CFEC;
+$secondary-color: #2C1320;
+$tertiary-color: #5F4B66;
+$accent-color: #FF6663;
+$title-font: 'Verdana';
+$text-font: 'Trebuchet MS';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $text-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $title-font;
+  margin-bottom: 1rem;
+}
